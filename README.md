@@ -1,4 +1,4 @@
-![alt text](https://github.com/PiroAvni/Florin_County_Council_Client/blob/staging/src/assets/logo_fcc.png "Pokedex")
+![alt text](https://github.com/PiroAvni/pokedex_typescript_vite_react/blob/main/public/Pok%C3%A9dex_logo.png "Pokedex")
 
 
 
