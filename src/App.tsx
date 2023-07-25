@@ -22,6 +22,7 @@ const Pokemon = lazy(() => import("./pages/Pokemon"));
 export default function App() {
   const { toasts } = useAppSelector(({ app }) => app);
   const dispatch = useAppDispatch();
+
   useEffect(() => {
     onAuthStateChanged(firebaseAuth, (currentUser) => {
       if (currentUser) {
@@ -29,6 +30,8 @@ export default function App() {
       }
     });
   }, [dispatch]);
+
+
   useEffect(() => {
     if (toasts.length) {
       const toastOptions: ToastOptions = {
@@ -44,6 +47,7 @@ export default function App() {
       dispatch(clearToasts());
     }
   }, [toasts, dispatch]);
+
 
   return (
     <div className="main-container">
